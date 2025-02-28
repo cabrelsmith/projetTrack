@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="shortcut icon" href="./image8.jpg">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="corps">
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="./logo ngombe.jpg" alt="Logo ProjetTrack" class="logo">
+            <span class="navbar-title">Ngombe SARL</span>
+        </div>
+        <h1 id="dashboard-title">Bienvenue sur ProjetTrack</h1>
+    </nav>
+
+    <div class="container">
+        <!-- Sidebar bien positionnée -->
+        <div class="sidebar">
+            <a href="#" class="menu-item">📊 Dashboard</a>
+            <a href="#" onclick="showSection('projets')" class="menu-item">📂 Projets</a>
+            <a href="#" onclick="showSection('modules')" class="menu-item">📌 Modules</a>
+            <a href="#" onclick="showSection('taches')" class="menu-item">✅ Tâches</a>
+            <a href="#" onclick="showSection('membres')" class="menu-item">👤 Membres</a>
+            <a href="#" onclick="showSection('ressources')" class="menu-item">🔧 Ressources</a>
+            <a href="index.html" class="logout">🔓 Déconnexion</a>
+        </div>
+
+        <!-- Contenu principal -->
+        <div class="main-content">
+            <h2 id="section-title"></h2>
+            <div id="content"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
