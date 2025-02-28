@@ -1,0 +1,378 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+}
+
+.corps-connexion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 30px;
+    /* Fond léger */
+}
+
+/* Page de connexion */
+.login-container {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    width: 90vw;
+    text-align: center;
+    box-sizing: border-box;
+    top: 0px;
+    left: 0px;
+    /* Centre uniquement le titre et le bouton */
+}
+
+.connexion {
+    margin-bottom: 20px;
+}
+
+.connecter {
+    width: 100%;
+    padding: 10px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.connecter:hover {
+    background: #0056b3;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    /* Étire les éléments pour bien aligner */
+}
+
+/* Aligner les labels à gauche */
+form label {
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Style des champs input */
+form input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 30px;
+
+}
+
+button {
+    background: rgb(37, 99, 235);
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    align-items: stretch;
+    border-radius: 10px;
+
+}
+
+/* Header */
+.header {
+    background: blue;
+    color: black;
+    padding: 15px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Menu latéral */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background: rgba(6, 158, 209, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    color: white;
+}
+
+.sidebar a {
+    display: block;
+    padding: 15px;
+    color: whitesmoke;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.logout {
+    position: fixed;
+    bottom: 20px;
+    width: calc(15% - 30px);
+    text-align: center;
+    background: rgba(255, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border-radius: 10px;
+
+}
+
+.logout:hover {
+    background: rgba(0, 0, 254, 0.7);
+}
+
+/* Contenu principal */
+.main-content {
+    margin-left: 260px;
+    padding: 20px;
+    background-image: url(./image1.jpg);
+    background-attachment: scroll;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    text-align: center;
+    font-weight: bold;
+    color: rgba(0, 0, 254);
+    position: fixed;
+
+
+}
+
+.section {
+    display: none;
+}
+
+/* Styles du tableau */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background: green;
+
+
+}
+
+th,
+td {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    color: black;
+}
+
+th {
+    background-color: blue;
+    color: blue;
+    font-weight: bold;
+}
+
+h1 {
+    cursor: pointer;
+    margin-top: 60px;
+}
+
+.btn-blue {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-right: 5px;
+    align-items: stretch;
+}
+
+.btn-blue:hover {
+    background-color: #0056b3;
+    align-items: stretch;
+    border-radius: 30px;
+}
+
+
+/* S/* Styles du bouton de fermeture */
+.close-btn {
+    background: rgba(255, 0, 0);
+    color: white;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    float: right;
+    margin-bottom: 10px;
+}
+
+/* Styles du tableau */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+.navbar {
+    background-color: rgba(6, 158, 209, 0.4);
+    color: blue;
+    text-align: center;
+    padding: 0px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+img {
+    height: 50px;
+    float: left;
+    margin: 15px;
+}
+
+
+/* Réinitialisation */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(1, 178, 255);
+    padding: 10px 20px;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 60px;
+}
+
+/* Logo + Nom ProjetTrack */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+    border-radius: 30px;
+}
+
+.navbar-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: rgba(255, 255, 255);
+    position: relative;
+    top: -20px;
+    text-align: left;
+    ;
+}
+
+/* Centrage du titre dans la navbar */
+#dashboard-title {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 30px;
+    color: rgba(255, 255, 255);
+    position: relative;
+    top: -50px;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: rgba(1, 178, 255);
+    padding: 20px;
+    color: rgba(255, 255, 255, 0.7);
+    height: 100vh;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    overflow-y: auto;
+}
+
+.menu-item {
+    display: block;
+    padding: 12px;
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3;
+}
+
+.menu-item:hover {
+    background: #0056b3;
+}
+
+/* Contenu principal */
+.main-content {
+    margin-left: 270px;
+    padding: 20px;
+    width: calc(100% - 270px);
+    margin-top: 80px;
+}
+
+#name {
+    position: relative;
+    top: 25px;
+}
+
+#name1 {
+    position: relative;
+    top: 40px;
+}
+
+/* CSS pour masquer le menu */
+.hidden {
+    display: none;
+}
+
+/* Style du bouton Retour */
+.btn-back {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.btn-back:hover {
+    background-color: #45a049;
+}
